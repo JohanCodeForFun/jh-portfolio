@@ -71,6 +71,7 @@ html {
   h2 {font-size: 4.2rem;}
 
   ul {list-style: none;}
+  li {display: inline;}
 
   a {
     text-decoration: none;
@@ -85,7 +86,12 @@ html {
   .nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     position: fixed;
+    height: 60px;
+    padding-right: 40px;
+    font-weight: 700;
+    word-spacing: 1rem;
     top: 0;
     left: 0;
     width: 100%;
@@ -117,10 +123,16 @@ html {
 
 
 
+.welcome-section,
+.projects-section,
+.contact-section {
+  padding: 60px;
+}
 
   .welcome-section {
     background: var(--main-darkblue);
     height: 100vh;
+    margin-top: 60px;
   }
 
 .projects-section {
@@ -131,4 +143,13 @@ html {
 .contact-section {
     height: 80vh;
     background: var(--main-darkblue);
+}
+
+footer {
+  height: 60px;
+  color: var(--main-white);
+  background-color: var(--main-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
