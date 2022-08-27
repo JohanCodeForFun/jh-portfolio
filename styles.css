@@ -124,6 +124,7 @@ html {
 
 
 .welcome-section,
+.tect-stack,
 .projects-section,
 .contact-section {
   padding: 60px;
@@ -135,9 +136,18 @@ html {
     margin-top: 60px;
   }
 
+  .tech-section {
+    background: var(--main-teal);
+    height: 60vh;
+  }
+
 .projects-section {
     height: 100vh;
-    background: var(--main-teal);
+    background: var(--main-white);
+}
+
+a .projects-section {
+  color: var(--main-darkblue);
 }
 
 .contact-section {
