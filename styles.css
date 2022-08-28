@@ -43,7 +43,7 @@ main,
 .projects,
 .about,
 .contact  {
-    height: 60vh;
+    /* height: 60vh; */
     width: 100vw;
     justify-content: flex-start;
     padding: 16px;
@@ -52,12 +52,13 @@ main,
 .cards-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: lightblue;
     border-radius: 16px;
-    width: 270px;
+    width: 300px;
     height: 400px;
     margin: 6px;
 }
@@ -77,8 +78,10 @@ main,
 .card a {
     padding: 12px;
 }
+
 .card a {
     padding-bottom: 16px;
+    text-decoration: none;
 }
 
 .card a {
@@ -87,4 +90,11 @@ main,
     padding: 8px 16px;
     border-radius: 12px;
     text-align: center;
+}
+
+.card:hover {
+    background-color: rgb(117, 32, 32);
+    color: white;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
 }
