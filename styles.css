@@ -15,10 +15,17 @@ main,
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* border: 1px solid red; */
 }
 
 .developer {
     height: 20vh;
+    width: 100vw;
+    background-image: url('./hero-2.jpg');
+    background-position: center;
+    background-color: #cccccc;
+    color: white;
+    box-shadow: 4px 4px 6px black;
 }
 
 
@@ -26,8 +33,9 @@ main,
 .about,
 .contact  {
     height: 60vh;
+    width: 100vw;
 }
 
 .projects-cards {
-    
+
 }
