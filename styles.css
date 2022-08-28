@@ -1,8 +1,9 @@
-
-
-html {
+* {
     margin: 0;
     padding: 0;
+}
+
+html {
     box-sizing: border-box;
 }
 
@@ -19,13 +20,22 @@ main,
 }
 
 .developer {
+    gap: 6px;
     height: 20vh;
     width: 100vw;
     background-image: url('./hero-2.jpg');
     background-position: center;
     background-color: #cccccc;
     color: white;
-    box-shadow: 4px 4px 6px black;
+    box-shadow: 2px -2px 2px 4px black;
+    text-shadow: 1px 1px black;
+}
+
+@media (min-width: 600px) {
+    .developer {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 
@@ -34,6 +44,8 @@ main,
 .contact  {
     height: 60vh;
     width: 100vw;
+    justify-content: flex-start;
+    padding: 16px;
 }
 
 .projects-cards {
