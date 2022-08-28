@@ -24,6 +24,7 @@ main,
     height: 20vh;
     width: 100vw;
     background-image: url('./hero-2.jpg');
+    /* background-size: cover; */
     background-position: center;
     background-color: #cccccc;
     color: white;
@@ -48,6 +49,42 @@ main,
     padding: 16px;
 }
 
-.projects-cards {
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
 
+.card {
+    background-color: lightblue;
+    border-radius: 16px;
+    width: 270px;
+    height: 400px;
+    margin: 6px;
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 16px;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+.project-1 {
+    background-image: url('./hero-2.jpg');
+}
+
+.card h3,
+.card p,
+.card a {
+    padding: 12px;
+}
+.card a {
+    padding-bottom: 16px;
+}
+
+.card a {
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    text-align: center;
 }
