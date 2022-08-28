@@ -1,0 +1,33 @@
+
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main,
+.developer,
+.projects,
+.about,
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.developer {
+    height: 20vh;
+}
+
+
+.projects,
+.about,
+.contact  {
+    height: 60vh;
+}
+
+.projects-cards {
+    
+}
