@@ -23,7 +23,7 @@ main,
     gap: 6px;
     height: 20vh;
     width: 100vw;
-    background-image: url('./hero-2.jpg');
+    background-image: url('./images/hero-2.jpg');
     /* background-size: cover; */
     background-position: center;
     background-color: #cccccc;
@@ -56,8 +56,8 @@ main,
 }
 
 .card {
-    background-color: #264653;
-    color: white;
+    /* background-color: #264653;
+    color: white; */
     width: 300px;
     height: 400px;
     margin: 6px;
@@ -70,7 +70,16 @@ main,
     background-size: cover;
 }
 .project-1 {
-    background-image: url('./project1.png');
+    background-image: url('./images/package-tracker.png');
+}
+.project-2 {
+    background-image: url('./images/memory-game.png');
+}
+.project-3 {
+    background-image: url('./images/fruit-shop.png');
+}
+.project-4 {
+    background-image: url('./images/pomodoro-timer.png');
 }
 
 .card h3,
@@ -85,16 +94,29 @@ main,
 }
 
 .card a {
-    background-color: blue;
-    color: white;
+    background-color: ;
+    color: ;
     padding: 8px 16px;
     border-radius: 12px;
     text-align: center;
 }
 
 .card:hover {
-    background-color: rgb(117, 32, 32);
-    color: white;
+    /* background-color: rgb(117, 32, 32);
+    color: white; */
     transform: scale(1.03);
     transition: all 0.5s ease;
+}
+
+.link-bug {
+    height: 20px;
+    background-color: white;
+    padding: 2px;
+    /* box-shadow: 2px 2px 4px pink; */
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
