@@ -16,7 +16,6 @@ main,
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 
 .developer {
@@ -28,7 +27,7 @@ main,
     background-position: center;
     background-color: #cccccc;
     color: white;
-    box-shadow: 2px -2px 2px 4px black;
+    box-shadow: 2px 2px 4px black;
     text-shadow: 1px 1px black;
 }
 
@@ -47,12 +46,12 @@ main,
 .contact-container {
     height: 30vh;
     padding: 16px;
-    border: 1px solid red;
 }
 
 .about,
 .contact {
-    max-width: 600px;
+    max-width: 300px;
+    flex: 1;
 }
 .about h1,
 .contact h1 {
@@ -64,7 +63,6 @@ main,
 .projects,
 .about-container,
 .contact-container  {
-    /* height: 60vh; */
     width: 100vw;
     justify-content: center;
     padding: 16px;
@@ -77,8 +75,6 @@ main,
 }
 
 .card {
-    /* background-color: #264653;
-    color: white; */
     width: 300px;
     height: 400px;
     margin: 6px;
@@ -121,8 +117,6 @@ main,
 }
 
 .card:hover {
-    /* background-color: rgb(117, 32, 32);
-    color: white; */
     transform: scale(1.03);
     transition: all 0.5s ease;
 }
@@ -131,7 +125,6 @@ main,
     height: 20px;
     background-color: white;
     padding: 2px;
-    /* box-shadow: 2px 2px 4px pink; */
 }
 
 .link-container {
