@@ -10,8 +10,8 @@ html {
 main,
 .developer,
 .projects,
-.about,
-.contact {
+.about-container,
+.contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,13 +39,34 @@ main,
     }
 }
 
+.my-work {
+    padding-bottom: 16px;
+}
+
+.about-container,
+.contact-container {
+    height: 30vh;
+    padding: 16px;
+    border: 1px solid red;
+}
+
+.about,
+.contact {
+    max-width: 600px;
+}
+.about h1,
+.contact h1 {
+    text-align: center;
+    padding: 16px;
+}
+
 
 .projects,
-.about,
-.contact  {
+.about-container,
+.contact-container  {
     /* height: 60vh; */
     width: 100vw;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 16px;
 }
 
@@ -113,8 +134,11 @@ main,
     /* box-shadow: 2px 2px 4px pink; */
 }
 
-.title-container {
+.link-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+.link-container h3 {
+    flex: 2;
 }
