@@ -46,17 +46,22 @@ main,
 .about-container,
 .contact-container {
     height: 30vh;
+    width: 80%;
     padding: 16px;
 }
 
 .about,
 .contact {
-    max-width: 300px;
+    min-width: 300px;
     flex: 1;
+    box-shadow: 2px 2px 12px black;
 }
 .about h1,
 .contact h1 {
     text-align: center;
+    padding: 16px;
+}
+.about p {
     padding: 16px;
 }
 
