@@ -1,165 +1,143 @@
-:root {
-    --main-white: #f0f0f0;
-    --main-orange: #e76f51;
-    --main-teal: #2a9d8f;
-    --main-darkblue: #264653;
-  }
-
-* {margin: 0;
-    padding: 0;}
-
-*,
-*::before,
-*::after {box-sizing: inherit;}
+* {
+    margin: 0;
+    padding: 0;
+}
 
 html {
     box-sizing: border-box;
-    /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-    html {font-size: 60%;}
-}
-  
-  /* 980px / 16px = 61.25em */
-  @media (max-width: 61.25em) {
-    html {font-size: 58%;}
-}
-  
-  /* 460px / 16px = 28.75em */
-  @media (max-width: 28.75em) {
-    html {font-size: 55%;}
+main,
+.developer,
+.projects,
+.about-container,
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-  body {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--main-white);
+.developer {
+    gap: 6px;
+    height: 20vh;
+    width: 100vw;
+    background-image: url('./images/hero-2.jpg');
+    /* background-size: cover; */
+    background-position: center;
+    background-color: #cccccc;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    text-shadow: 1px 1px black;
 }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-weight: 700;
+@media (min-width: 600px) {
+    .developer {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.my-work {
+    padding-bottom: 16px;
+}
+
+.about-container,
+.contact-container {
+    height: 30vh;
+    width: 80%;
+    padding: 16px;
+}
+
+.about,
+.contact {
+    min-width: 300px;
+    flex: 1;
+    box-shadow: 2px 2px 12px black;
+}
+.about h1,
+.contact h1 {
+    text-align: center;
+    padding: 16px;
+}
+.about p {
+    padding: 16px;
+}
+
+
+.projects,
+.about-container,
+.contact-container  {
+    width: 100vw;
+    justify-content: center;
+    padding: 16px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 6px;
+    box-shadow: 2px 2px 12px black;
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 16px;
+    background-size: cover;
+}
+.project-1 {
+    background-image: url('./images/package-tracker.png');
+}
+.project-2 {
+    background-image: url('./images/memory-game.png');
+}
+.project-3 {
+    background-image: url('./images/fruit-shop.png');
+}
+.project-4 {
+    background-image: url('./images/pomodoro-timer.png');
+}
+
+.card h3,
+.card p,
+.card a {
+    padding: 12px;
+}
+
+.card a {
+    padding-bottom: 16px;
+    text-decoration: none;
+}
+
+.card a {
+    padding: 8px 16px;
+    border-radius: 12px;
     text-align: center;
 }
 
-  h1 {font-size: 6rem;}
-  h2 {font-size: 4.2rem;}
-
-  ul {list-style: none;}
-  li {display: inline;}
-
-  a {
-    text-decoration: none;
-    color: var(--main-white);
+.card:hover {
+    transform: scale(1.03);
+    transition: all 0.5s ease;
 }
 
-  img {
-    display: block;
-    width: 100%;
+.link-bug {
+    height: 20px;
+    background-color: white;
+    padding: 2px;
 }
 
-.nav {
+.link-container {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    position: fixed;
-    height: 60px;
-    padding-right: 40px;
-    font-weight: 700;
-    word-spacing: 1rem;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--main-orange);
-    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    justify-content: flex-end;
 }
-
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  margin-right: 2rem;
-}
-
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
-}
-
-.nav-list a {
-  display: block;
-  font-size: 2.2rem;
-  padding: 2rem;
-}
-
-
-
-.welcome-section,
-.tect-stack,
-.projects-section,
-.contact-section {
-  padding: 60px;
-}
-
-  .welcome-section {
-    background: var(--main-darkblue);
-    height: 100vh;
-    margin-top: 60px;
-  }
-
-  .tech-section {
-    background: var(--main-teal);
-    height: 60vh;
-  }
-
-.projects-section {
-    height: 100vh;
-    background: var(--main-white);
-}
-
-a .projects-section {
-  color: var(--main-darkblue);
-}
-
-.contact-section {
-    height: 80vh;
-    background: var(--main-darkblue);
-}
-
-footer {
-  height: 60px;
-  color: var(--main-white);
-  background-color: var(--main-orange);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.link-container h3 {
+    flex: 2;
 }

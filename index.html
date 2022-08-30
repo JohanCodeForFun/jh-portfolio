@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johan Hellberg Frontend Developer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav id="navbar" class="nav">
-        <ul>
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="welcome-section" class="welcome-section">
-        <h1>Looking for a effiecnt, reliant, [soft skills #1 in high demand],  [soft skills #1 in high demand]?  </h1>
-        
-        <h2>Hey, I'm Johan Hellberg, Software Developer.</h2>
-        <p> I can help you _____ and ______.</p>
-
-    </section>
-
-    <section class="tech-stack">
-        <div>
-            <h1>Tech Stack</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johan Hellberg: Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="developer">
+        <h1>Frontend Developer</h1>
+        <h3>Johan Hellberg</h3>
+        <div class="links">
+          <p>
+              <a href="Johan_Hellberg_Frontend_Utvecklare_CV.pdf" target="_blank"><img class="link-bug" src="./images/downloadCV.png"></a>
+              <a href="https://github.com/JohanCodeForFun" target="_blank"><img class="link-bug" src="./images/GitHub-Mark-32px.png"></a>
+              <a href="https://www.linkedin.com/in/johan-hellberg-805078167/" target="_blank"><img class="link-bug" src="./images/LI-In-Bug.png"></a>
+            </p>
         </div>
-    </section>
+      </section>
 
-    <section id="projects" class="projects-section">
-        <section class="project-tile">
-            <div>
-                <a href="#" id="portfolio-link" target="_blank">Package Tracker APP</a>
-            </div>
-            <div>
-                <a href="#" id="portfolio-link" target="_blank">Package Tracker APP</a>
-            </div>
-            <div>
-                <a href="#" id="portfolio-link" target="_blank">Package Tracker APP</a>
-            </div>
+      <section class="projects">
+        <h1 class="my-work">My Work</h1>
 
+        <section class="cards-container">
+            <article class="card">
+                <div class="card-image project-1"></div>
+                <div class="link-container">
+                    <h3>Package Tracker</h3>
+                    <a href="https://jhellberg.com/portfolio/package-tracker/index.html" target="_blank"><img class="link-bug" src="./images/external-link.png" alt="Live View"></a>
+                    <a href="https://github.com/JohanCodeForFun/Package-Tracker" target="_blank"><img class="link-bug" src="./images/GitHub-Mark-32px.png" alt="Github link"></a>
+                </div>
+                <p>
+                  Project mostly in JavaScript using datastructures and algorithms to search and display packages.
+                </p>
+              </article>
+            <article class="card">
+              <div class="card-image project-3"></div>
+              <div class="link-container">
+              <h3>Fruit Shop</h3>            
+              <a href="https://jhellberg.com/portfolio/fruit-shop/index.html" target="_blank"><img class="link-bug" src="./images/external-link.png" alt="Live View"></a>
+              <a href="https://github.com/JohanCodeForFun/fruit-shop" target="_blank"><img class="link-bug" src="./images/GitHub-Mark-32px.png" alt="Github link"></a>
+              </div>
+              <p>
+                An online responsive fruitshop with shopping cart created in JavaScript.
+              </p>
+            </article>
+          <article class="card">
+            <div class="card-image project-2"></div>
+            <div class="link-container">
+            <h3>Memory Game</h3>
+            <a href="https://jhellberg.com/portfolio/memory/index.html" target="_blank"><img class="link-bug" src="./images/external-link.png" alt="Live View"></a>
+            <a href="https://github.com/JohanCodeForFun/memory" target="_blank"><img class="link-bug" src="./images/GitHub-Mark-32px.png" alt="Github link"></a>
+            </div>
+            <p>
+              Memory game made in JavaScript with additional picture gallery to show each photo.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-image project-4"></div>
+            <div class="link-container">
+            <h3>Pomodoro App</h3>            
+            <a href="https://jhellberg.com/portfolio/pomodoro/index.html" target="_blank"><img class="link-bug" src="./images/external-link.png" alt="Live View"></a>
+            <a href="https://github.com/JohanCodeForFun/pomodoro" target="_blank"><img class="link-bug" src="./images/GitHub-Mark-32px.png" alt="Github link"></a>
+            </div>
+            <p>
+              Fun Pomodoro tracker to use while working for deep work and regular breaks.
+            </p>
+          </article>
         </section>
+      </section>
 
-    </section>
+      <section class="about-container">
+        <article class="about">
+          <h1>Vill ni ha hjälp med att utveckla era frontend funktioner?</h1>
+          <p>Hej mitt namn är Johan Hellberg. Jag har erfarnhet av... Jag är ordningsam, ambitiös och självgående.</p>
+        </article>
+      </section>
 
-    <section id="contact" class="contact-section">
-        <h1>Contact me</h1>
-        <h4>email me, johan@jhellberg.com</h4>
-    </section>
+      <section class="contact-container">
+        <article class="contact">
+          <h1>Contact</h1>
 
+        </article>
+      </section>
+    </main>
 
     <footer>
-        <p>Footer text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Portfolio project</p>
 
     </footer>
-</body>
+  </body>
 </html>
