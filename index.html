@@ -156,7 +156,6 @@
           >
             <div class="form-group">
               <div class="form-row">
-                <div class="col">
                   <input
                     type="text"
                     name="name"
@@ -164,8 +163,6 @@
                     placeholder="Full Name"
                     required
                   />
-                </div>
-                <div class="col">
                   <input
                     type="email"
                     name="email"
@@ -173,10 +170,9 @@
                     placeholder="Email Address"
                     required
                   />
-                </div>
               </div>
             </div>
-            <div class="form-group">
+            <div class="form-textarea">
               <textarea
                 placeholder="Your Message"
                 class="form-control"
@@ -184,10 +180,10 @@
                 rows="10"
                 required
               ></textarea>
+              <button id="btn-send" type="submit">
+                Send Message
+              </button>
             </div>
-            <button id="btn-send" type="submit" class="btn btn-lg btn-dark btn-block">
-              Send Message
-            </button>
             <input type="hidden" name="_captcha" value="false" />
             <input
               type="hidden"
