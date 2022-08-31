@@ -50,8 +50,13 @@ main,
     padding: 16px;
 }
 
+footer {
+    height: 32px;
+}
+
 .about,
 .contact {
+    border-radius: .5rem;
     min-width: 300px;
     flex: 1;
     box-shadow: 2px 2px 12px green;
@@ -76,6 +81,7 @@ main,
 }
 
 .card {
+    border-radius: .5rem;
     width: 300px;
     height: 400px;
     margin: 6px;
@@ -83,6 +89,7 @@ main,
 }
 
 .card-image {
+    border-radius: .5rem .5rem 0 0;
     height: 170px;
     margin-bottom: 16px;
     background-size: cover;
@@ -107,14 +114,7 @@ main,
 }
 
 .card a {
-    padding-bottom: 16px;
-    text-decoration: none;
-}
-
-.card a {
     padding: 8px 16px;
-    border-radius: 12px;
-    text-align: center;
 }
 
 .card:hover {
@@ -125,6 +125,7 @@ main,
 .link-bug {
     height: 20px;
     background-color: white;
+    border-radius: .5rem;
     padding: 2px;
 }
 
@@ -153,4 +154,41 @@ main,
     text-align: center;
     box-shadow: 2px 2px 12px black;
     padding: 16px;
+}
+
+
+/* form styling */
+
+form {
+    padding: 16px;
+    max-width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    flex: 1;
+}
+
+button, input, select, textarea {
+    border-radius: .5rem;
+    border: 1px solid black;
+    font-family: inherit;
+    font-size: 100%;
+    padding: .5rem;
+}
+
+input, textarea {
+    width: 90%;
+    margin: 6px 0;
+    padding: .5rem;
+}
+
+#btn-send {
+    margin-top: .5rem 0;
+    padding: .5rem 1rem;
+    width: 90%;
 }
