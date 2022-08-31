@@ -137,3 +137,21 @@ main,
 .link-container h3 {
     flex: 2;
 }
+
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.thank-you h1,
+.thank-you h3 {
+    padding-bottom: 16px;
+}
+.thank-you {
+    text-align: center;
+    box-shadow: 2px 2px 12px black;
+    padding: 16px;
+}
