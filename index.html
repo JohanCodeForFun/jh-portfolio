@@ -81,8 +81,10 @@
 
       <section class="contact-container">
         <article class="contact">
-            <h1>FormSubmit Demo</h1>
-  <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+            <h1>Contact me</h1>
+  <form target="_blank" action="https://formsubmit.co/johan@jhellberg.com" method="POST">
+    <input type="hidden" name="_next" value="./thank-you.html">
+    <input type="hidden" name="_captcha" value="false">
     <div class="form-group">
       <div class="form-row">
         <div class="col">
@@ -96,7 +98,7 @@
     <div class="form-group">
       <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
     </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Send Message</button>
   </form>
 </div>
 
