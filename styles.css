@@ -40,19 +40,17 @@ main,
 }
 
 .my-work {
-    padding-bottom: 16px;
-    padding-top: 16px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .about-container,
 .contact-container {
     width: 80%;
-    padding: 16px;
+    margin: 1rem;
 }
 
-footer {
-    height: 32px;
-}
+/* about and contact formatting */
 
 .about,
 .contact {
@@ -73,6 +71,9 @@ footer {
 .about p {
     padding: 16px;
 }
+
+
+/* Card formatting */
 
 .cards-container {
     display: flex;
@@ -138,6 +139,8 @@ footer {
     flex: 2;
 }
 
+
+/* Thank you page format */
 .thank-you-container {
     display: flex;
     justify-content: center;
@@ -191,4 +194,11 @@ input, textarea {
     margin-top: .5rem 0;
     padding: .5rem 1rem;
     width: 90%;
+}
+
+
+/* footer format for space */
+
+footer {
+    height: 32px;
 }
