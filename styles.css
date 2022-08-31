@@ -46,7 +46,6 @@ main,
 
 .about-container,
 .contact-container {
-    height: 30vh;
     width: 80%;
     padding: 16px;
 }
