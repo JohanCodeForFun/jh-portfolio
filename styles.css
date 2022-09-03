@@ -32,33 +32,6 @@ main,
     text-shadow: 1px 1px black;
 }
 
-@media (min-width: 375px) {
-    .developer {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .about-container,
-    .contact-container,
-    .contact {
-        width: 300px;
-    }
-}
-
-@media (min-width: 646px) {
-    .developer {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .about-container,
-    .contact-container,
-    .contact {
-        width: 620px;
-    }
-}
-
-
 .my-work {
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -210,4 +183,30 @@ input, textarea {
 
 footer {
     height: 32px;
+}
+
+@media (min-width: 375px) {
+    .developer {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .about-container,
+    .contact-container,
+    .contact {
+        width: 300px;
+    }
+}
+
+@media (min-width: 646px) {
+    .developer {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .about-container,
+    .contact-container,
+    .contact {
+        width: 620px;
+    }
 }
