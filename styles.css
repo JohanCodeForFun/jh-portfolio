@@ -91,12 +91,18 @@ main,
 }
 .project-2 {
     background-image: url('./images/memory-game.png');
+    /* width: 300px;
+    height: 170px; */
 }
 .project-3 {
     background-image: url('./images/fruit-shop.png');
+    /* width: 300px;
+    height: 170px; */
 }
 .project-4 {
     background-image: url('./images/pomodoro-timer.png');
+    /* width: 300px;
+    height: 170px; */
 }
 
 .card h3,
