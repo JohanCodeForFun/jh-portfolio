@@ -28,7 +28,6 @@ main,
     background-position: center;
     background-color: #cccccc;
     color: white;
-    box-shadow: 2px 2px 4px black;
     text-shadow: 1px 1px black;
 }
 
@@ -44,14 +43,14 @@ main,
 
 /* about and contact formatting */
 
+.developer,
+.contact {
+    box-shadow: 2px 2px 12px black;
+}
 .about,
 .contact {
     border-radius: .5rem;
     flex: 1;
-    box-shadow: 2px 2px 12px green;
-}
-.about {
-    box-shadow: 2px 2px 12px red; 
 }
 
 .about h1,
