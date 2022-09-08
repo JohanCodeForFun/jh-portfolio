@@ -181,7 +181,7 @@ input, textarea {
 }
 
 #btn-send {
-    margin-top: .5rem 0;
+    margin-top: .5rem;
     padding: .5rem 1rem;
     width: 100%;
 }
@@ -231,3 +231,5 @@ footer {
         color: #ddddcd;
     }
   }
+
+/* Validated above, OK! */
