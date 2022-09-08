@@ -10,12 +10,14 @@
 9. Media queries
 */
 
+
 /* 1. Root settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /* 2. Body, html settings */
 
@@ -209,14 +211,12 @@ input, textarea {
 }
 
 
-
-
-
 /* 8. Footer */
 
 footer {
     height: 32px;
 }
+
 
 /* 9. Media queries for responsive design */
 
@@ -255,6 +255,4 @@ footer {
         background-color: #3d3d3d;
         color: #ddddcd;
     }
-  }
-
-/* Validated above, OK! */
+}
