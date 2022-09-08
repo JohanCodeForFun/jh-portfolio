@@ -222,10 +222,6 @@ footer {
 /* 9. Media queries for responsive design */
 
 @media (min-width: 375px) {
-    .developer {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
 
     .about-container,
     .contact-container,
@@ -236,8 +232,7 @@ footer {
 
 @media (min-width: 646px) {
     .developer {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        height: 120px;
     }
 
     .about-container,
