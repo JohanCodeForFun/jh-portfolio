@@ -215,7 +215,13 @@ input, textarea {
 /* 8. Footer */
 
 footer {
-    height: 32px;
+    margin-top: 2rem;
+    background-color: #3d3d3d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
 }
 
 
