@@ -11,7 +11,7 @@
 
   <body>
     <main>
-      <section class="developer">
+      <section class="developer" id="welcome-section">
         <h1>Frontend Developer</h1>
         <h3>Johan Hellberg</h3>
         <div class="links">
@@ -20,7 +20,7 @@
               ><img class="link-bug" alt="download CV" src="./images/downloadCV.png"
             /></a>
             <a href="https://github.com/JohanCodeForFun" target="_blank"
-              ><img class="link-bug" alt="GitHub Profile" src="./images/GitHub-Mark-32px.png"
+              id="profile-link"><img class="link-bug" alt="GitHub Profile" src="./images/GitHub-Mark-32px.png"
             /></a>
             <a
               href="https://www.linkedin.com/in/johan-hellberg-805078167/"
@@ -30,11 +30,19 @@
           </p>
         </div>
       </section>
+      <section>
 
-      <section class="projects">
+        <nav id="navbar">
+          <a href="#welcome-section">Link to welcome-section</a>
+          <a href="#projects">Link to projects</a>
+          <a href="#contact">Link to contact</a>
+        </nav>
+      </section>
+
+      <section class="projects" id="projects">
         <h1 class="my-work">My Work</h1>
         <div class="cards-container">
-          <article class="card">
+          <article class="project-tile card" >
             <div class="card-image project-1"></div>
             <div class="link-container">
               <h3>Package Tracker</h3>
@@ -144,7 +152,7 @@
         </div>
       </section>
 
-      <section class="contact-container">
+      <section class="contact-container" id="contact">
         <h2>Contact me</h2>
         <div class="contact">
           <form

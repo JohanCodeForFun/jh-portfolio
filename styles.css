@@ -130,6 +130,24 @@ main,
 }
 
 
+/* FCC CERT */
+#welcome-section {
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    
+}
+
+
 /* 5. About section */
 /* 6. Contact section */
 
